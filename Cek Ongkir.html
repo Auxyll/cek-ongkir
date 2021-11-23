@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+    content="width=device-width,
+    initial-scale=1.0">
+    <title>Program Cek Ongkir</title>
+    
+</head>
+
+<body>
+    <script src="ongkir.js"></script>
+    <header>
+        <h1>Cek Ongkir</h1>
+    </header>
+    <main>
+        <div class="form-container">
+            <div></div>
+            <div>
+                <div class="formCariNilai" action="">
+                    <p><i class="fas fa-info-circle"></i>
+                    Info Harga</p>
+                    <table border="1">
+                        <tr>
+                            <th>*</th>
+                            <th>Bandung</th>
+                            <th>Yogyakarta</th>
+                            <th>Jakarta</th>
+                        </tr>
+                        <tr>
+                            <td>Reguler</td>
+                            <td>22000</td>
+                            <td>18000</td>
+                            <td>24000</td>
+                        </tr>
+                        <tr>
+                            <td>Express</td>
+                            <td>32000</td>
+                            <td>28000</td>
+                            <td>34000</td>
+
+                        </tr>
+                    </table>
+                    <select class="inputNilai"
+                    id="inputKelas">
+                    <option id="">Pilih Jenis Pengiriman</option>
+                    <option>Reguler</option>
+                    <option>Express</option>
+                    </select>
+                    <select class="inputNilai" 
+                    id="inputKota">
+                        <option>Pilih Tujuan</option>
+                        <option>Bandung</option>
+                        <option>Yogyakarta</option>
+                        <option>Jakarta</option>
+                    </select>
+                    <p><i class="fas fa-info-circle"></i>
+                    Jika pesan outfit lebih dari 10,
+                    diskon ongkir 5%</p>
+                    <input class="inputNilai
+                    inputNilai-joutfit" id="jumlahOutfit"
+                    type="number"
+                        placeholder="jumlah Outfit">
+
+                    <input class="btnHitung"
+                    type="button" value="Hitung"
+                    id="buttonHitungOutfit">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="tabelHasil">
+            <table class="anwserTable">
+                <tr>
+                    <td class="label">Harga Sebelum Diskon</td>
+                    <td class="price" id="harga"></td>
+                </tr>
+                <tr>
+                    <td class="label">Diskon</td>
+                    <td class="price" id="discount"></td>
+                </tr>
+                <tr>
+                    <td class="label label-total">Total</td>
+                    <td class="price price-total" id="total"></td>
+                </tr>
+            </table>
+        </div>
+        <div class="btnBack">
+            <a href="indexx.html">Back to Menu</a>
+        </div>
+    </main>
+    <script src="ongkir.js"></script>
+</body>
